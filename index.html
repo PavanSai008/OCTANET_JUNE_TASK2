@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <br>Task<br>
+        <input type="text" class="input" id="taskInput" placeholder="Add a new task...">
+        <br><br>Due date/time <br>
+        <input type="datetime-local" class="input" id="dueDateInput" placeholder="Due date...">
+        <br><br><label for="categoryInput">category</label><br>
+        <select id="categoryInput" class="input" >
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <button id="addTaskButton">Add Task</button><br><br>
+        <h2>Tasks</h2>
+        <ul id="taskList"></ul><br>
+        <h2>Completed Tasks</h2>
+        <ul id="completedList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

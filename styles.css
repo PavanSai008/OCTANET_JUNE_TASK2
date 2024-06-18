@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A2130;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+    width: 70%;
+    text-align: center;
+}
+.input{
+    width: 40%;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input, select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0E46A3;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #023EBA;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-1px);
+}
+button:active{
+    transform: translateY(1px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.task-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li button {
+    background-color: #18CAEA;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #023EBA;
+}
+
+li.completed {
+    background-color: #dff0d8;
+    text-decoration:none;
+}
+
+li.completed button {
+    background-color: #d9534f;
+
+}
+
+li.completed button:hover {
+    background-color: #c9302c;
+}
+
+.category {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+}
